@@ -1,0 +1,40 @@
+<h1 class="m-auto mb-4 p-2" style="width: fit-content; border-bottom: 2px solid #495057;">
+    Mark Attendance for Today
+</h1>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Subject</th>
+            <th scope="col">Attendance</th>
+        </tr>
+    </thead>
+    <tbody ng-repeat="student in students">
+        <tr>
+            <th scope="row">{{$index+1}}</th>
+            <th scope="row">{{student.id}}</th>
+            <td>{{student.name}}</td>
+            <td>{{subject}}</td>
+            <th scope="row">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" id="{{'present'+student.id}}" name="{{'student'+student.id}}"
+                        autocomplete="off">
+                    <label class="btn btn-outline-primary" for="{{'present'+student.id}}">P</label>
+
+                    <input type="radio" class="btn-check" id="{{'absent'+student.id}}" name="{{'student'+student.id}}"
+                        autocomplete="off">
+                    <label class="btn btn-outline-primary" for="{{'absent'+student.id}}">A</label>
+                </div>
+            </th>
+        </tr>
+    </tbody>
+</table>
+
+<div class="m-auto mt-4">
+    <button class="btn btn-success">Submit</button>
+    <button class="btn btn-outline-success">All Present</button>
+    <button class="btn btn-outline-danger">All Absent</button>
+</div>

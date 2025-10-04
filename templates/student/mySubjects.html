@@ -15,7 +15,7 @@
         <tbody>
             <tr ng-repeat="teacher in teachers">
                 <th scope="row">{{$index+1}}</th>
-                <td>{{teacher.subject}}</td>
+                <td>{{teacher.subject | uppercase}}</td>
                 <td>{{teacher.name}}</td>
                 <td><a style="text-decoration: none;" ui-sref="student.{{teacher.subject}}Syllabus">Click me! </a></td>
             </tr>
