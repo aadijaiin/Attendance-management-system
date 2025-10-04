@@ -1,0 +1,183 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Aadi",
+      "password": "aadi"
+    },
+    {
+      "id": 2,
+      "name": "Uday",
+      "password": "aadi"
+    },
+    {
+      "id": 3,
+      "name": "Himanshu",
+      "password": "aadi"
+    },
+    {
+      "id": 4,
+      "name": "Shani",
+      "password": "aadi"
+    },
+    {
+      "id": 5,
+      "name": "student",
+      "password": "aadi"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Sanjeev",
+      "password": "aadi",
+      "subject": "maths"
+    },
+    {
+      "id": 2,
+      "name": "Dinesh",
+      "password": "aadi",
+      "subject": "english"
+    },
+    {
+      "id": 3,
+      "name": "Abhishek",
+      "password": "aadi",
+      "subject": "hindi"
+    },
+    {
+      "id": 4,
+      "name": "Sagar",
+      "password": "aadi",
+      "subject": "science"
+    },
+    {
+      "id": 5,
+      "name": "Jatin",
+      "password": "aadi",
+      "subject": "cs"
+    }
+  ],
+  "attendance": [
+    {
+      "id": 1,
+      "attendance": [
+        {
+          "teacherID": 1,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": true
+          }
+        },
+        {
+          "teacherID": 2,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": false
+          }
+        },
+        {
+          "teacherID": 3,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": true
+          }
+        },
+        {
+          "teacherID": 4,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": true
+          }
+        },
+        {
+          "teacherID": 5,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": true
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "attendance": [
+        {
+          "teacherID": 1,
+          "calendar": {
+            "30 sep 2025": true,
+            "1 oct 2025": false
+          }
+        },
+        {
+          "teacherID": 2,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": false
+          }
+        },
+        {
+          "teacherID": 3,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": false
+          }
+        },
+        {
+          "teacherID": 4,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": false
+          }
+        },
+        {
+          "teacherID": 5,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": false
+          }
+        }
+      ]
+    },
+    {
+      "attendance": [
+        {
+          "teacherID": 1,
+          "calendar": {
+            "30 sep 2025": true,
+            "1 oct 2025": false
+          }
+        },
+        {
+          "teacherID": 2,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": false
+          }
+        },
+        {
+          "teacherID": 3,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": false
+          }
+        },
+        {
+          "teacherID": 4,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": false
+          }
+        },
+        {
+          "teacherID": 5,
+          "calendar": {
+            "30 sep 2025": false,
+            "1 oct 2025": false
+          }
+        }
+      ],
+      "id": 3
+    }
+  ]
+}

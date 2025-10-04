@@ -1,0 +1,35 @@
+<div class="w-100 vh-100 p-4">
+    <h1 class="m-auto mb-4 p-2" style="width: fit-content; border-bottom: 2px solid #495057;">
+        Mark Attendance for Today
+    </h1>
+    <div style="width: 70%; margin: auto; border: 2px solid #495057; padding: 2rem; border-radius: 1rem;">
+        <table class="table table-hover" >
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Roll number</th>
+                    <th scope="col">Attendance</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="student in students">
+                <tr>
+                    <th scope="row">{{$index+1}}</th>
+                    <td>{{student.name}}</td>
+                    <th scope="row">{{student.id}}</th>
+                    <th scope="row">
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" id="{{'present'+student.id}}"
+                                name="{{'student'+student.id}}" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="{{'present'+student.id}}">Present</label>
+
+                            <input type="radio" class="btn-check" id="{{'absent'+student.id}}"
+                                name="{{'student'+student.id}}" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="{{'absent'+student.id}}">Absent</label>
+                        </div>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

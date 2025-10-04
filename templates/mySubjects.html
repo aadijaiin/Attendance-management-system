@@ -1,0 +1,24 @@
+<div ng-controller="studentDashboardController" class="mt-4">
+    <div class="d-flex" style="gap: 1rem;">
+        <img src="../images/archive.png" style="height: 2rem;" alt="">
+        <h3 class="mb-4"> Know your syllabus</h3>
+    </div>
+    <table class="table table-responsive table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Teacher</th>
+                <th scope="col">Syllabus</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="teacher in teachers">
+                <th scope="row">{{$index+1}}</th>
+                <td>{{teacher.subject}}</td>
+                <td>{{teacher.name}}</td>
+                <td><a style="text-decoration: none;" ui-sref="student.{{teacher.subject}}Syllabus">Click me! </a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

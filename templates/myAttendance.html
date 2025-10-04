@@ -1,0 +1,30 @@
+<div ng-controller="studentDashboardController" class="mt-4">
+    <div class="d-flex" style="gap: 1rem;">
+        <img src="../images/calendar.png" style="height: 2rem;" alt="">
+        <h3 class="mb-4"> Attendance as of 1 oct 2025</h3>
+    </div>
+    <table class="table table-responsive table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Teacher</th>
+                <th scope="col">Attendance</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="data in attendance">
+                <th scope="row">{{$index +1}}</th>
+                <td>{{teachers[$index].subject}}</td>
+                <td>{{teachers[$index].name}}</td>
+                <td><p style="padding-left: 0.5rem; padding-right: 0.5rem;border-radius: 0.5rem; width: fit-content; background-color: {{data.calendar['1 oct 2025'] ? 'green':'red'}};">{{data.calendar['1 oct 2025'] ? 'Present':'Absent'}}</p></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="d-flex justify-content-center">
+        <div class="border rounded" data-coreui-locale="en-US" data-coreui-selection-type="month"
+            data-coreui-start-date="2024-2" data-coreui-toggle="calendar">
+
+        </div>
+    </div>
+</div>

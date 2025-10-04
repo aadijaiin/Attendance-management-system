@@ -1,0 +1,30 @@
+<div class="min-vw-100 min-vh-100 d-flex justify-content-center align-items-center">
+    <div ng-controller="loginController" class="w-100" style="height: fit-content;  padding: 2rem; max-width: 600px;">
+
+        <h1 class="m-auto mb-4" style="width: fit-content">{{user=='student'?"Student":"Teacher"}} Login
+        </h1>
+        <div class="alert alert-danger" role="alert" ng-show="false">
+            A simple danger alert—check it out!
+        </div>
+        <form ng-submit="submit(id,password)" style="border: 2px solid #495057;" class="rounded-4 p-4">
+            <div class="btn-group mb-4" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" ng-model="user" value="student" class="btn-check" name="btnradio" id="btnradio1"
+                    autocomplete="off" checked>
+                <label class="btn btn-outline-primary" for="btnradio1">Student</label>
+                <input type="radio" ng-model="user" value="teacher" class="btn-check" name="btnradio" id="btnradio2"
+                    autocomplete="off">
+                <label class="btn btn-outline-primary" for="btnradio2">Teacher</label>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">{{user}} ID</label>
+                <input type="text" class="form-control" required id="exampleInputEmail1" ng-model="id">
+                <div id="emailHelp" class="form-text">Your details are safe with us.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" required id="exampleInputPassword1" ng-model="password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
